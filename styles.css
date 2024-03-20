@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 253, 250); /* Light greenish background */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    border: 1px solid #ccc; /* Add a 1px solid border around the body */
+    border-radius: 5px; /* Add some border radius for a slight rounded corner effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*
+}
+
+/* Rest of the CSS remains the same */
+
+/* Style for the OptiSizeLogo */
+#OptiSizeLogo {
+    display: block; /* Make the image a block element */
+    margin: 20px auto; /* Center the image horizontally with 20px top margin */
+}
+
+body {
+    justify-content: space-between; /* Align items with space between them */
+}
+
+/* Style for the buttons */
+button {
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin: 10px; /* Add margin around the buttons */
+}
+/* Hover effect for the buttons */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
