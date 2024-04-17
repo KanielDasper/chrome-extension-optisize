@@ -8,26 +8,20 @@ body {
     padding: 0; /* Remove default body padding */
     border: 1px solid #ccc; /* Add a 1px solid border around the body */
     border-radius: 5px; /* Add some border radius for a slight rounded corner effect */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Rest of the CSS remains the same */
+ body {
+    width: 250px; /* change this to your desired width */
+    height: 150px; /* change this to your desired height */
+    position: relative;
+    text-align: center;
+ }
 
-/* Style for the OptiSizeLogo */
-#OptiSizeLogo {
-    display: block; /* Make the image a block element */
-    margin: 20px auto; /* Center the image horizontally with 20px top margin */
-}
-
-body {
-    justify-content: space-between; /* Align items with space between them */
-}
-
-/* Style for the buttons */
 button {
     padding: 10px 20px; /* Add padding */
-    font-size: 16px; /* Increase font size */
-    background-color: #007bff; /* Blue background color */
+    font-size: 20px; /* Increase font size */
+    background-color: #435ea1; /* Blue background color */
     color: #fff; /* White text color */
     border: none; /* Remove border */
     cursor: pointer; /* Change cursor to pointer on hover */
@@ -35,6 +29,15 @@ button {
 }
 /* Hover effect for the buttons */
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #2f4375; /* Darker blue on hover */
+}
+
+.button-container {
+            text-align: center; /* Align the buttons horizontally */
+}
+
+/* Style for individual buttons (optional) */
+.button-container button {
+            margin: 5px; /* Add margin between buttons */
 }
 
