@@ -1,43 +1,78 @@
-/* styles.css */
+/* Styles for Logo and Company Name */
 
-/* Style for the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(247, 253, 250); /* Light greenish background */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-    border: 1px solid #ccc; /* Add a 1px solid border around the body */
-    border-radius: 5px; /* Add some border radius for a slight rounded corner effect */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust based on the total width of the content */
+    height: 400px; /* Adjust based on the total height of the content */
+    padding: 10px; /* Adjust based on the spacing around the content */
 }
 
- body {
-    width: 250px; /* change this to your desired width */
-    height: 150px; /* change this to your desired height */
-    position: relative;
-    text-align: center;
- }
-
-button {
-    padding: 10px 20px; /* Add padding */
-    font-size: 20px; /* Increase font size */
-    background-color: #435ea1; /* Blue background color */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    margin: 10px; /* Add margin around the buttons */
-}
-/* Hover effect for the buttons */
-button:hover {
-    background-color: #2f4375; /* Darker blue on hover */
+.logo-container {
+    top: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
 
-.button-container {
-            text-align: center; /* Align the buttons horizontally */
+.logo {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-right: 10px; /* Adjust spacing between logo and company name */
 }
 
-/* Style for individual buttons (optional) */
-.button-container button {
-            margin: 5px; /* Add margin between buttons */
+.fits {
+    width: 250px;
+    height: 230px;
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
 
+.company-name {
+    margin: 0;
+    line-height: 30px; /* Vertically center company name with logo */
+}
+
+/* Styles for User Profile */
+.user-profile {
+    position: absolute;
+    top: 10px;
+    right: 15px; /* Adjust distance from the right edge */
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    border-radius: 50%; /* Ensure profile picture is round */
+    margin-left: 10px; /* Adjust spacing between profile picture and user name */
+}
+
+.user-name {
+    margin: 0;
+    line-height: 30px; /* Vertically center user name with profile picture */
+}
+
+/* Style for Clickable Button */
+.clickable-button {
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button text size */
+    cursor: pointer;
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none;
+    border-radius: 5px; /* Adjust button border radius */
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clickable-button:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}
+
+
+/* Styles for Appended Elements */
+.appended-element {
+    margin-top: 10px; /* Adjust spacing between appended elements */
+}

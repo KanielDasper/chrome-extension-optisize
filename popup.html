@@ -7,10 +7,26 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>OptiSize</h1>
-  <h3>Welcome to OptiSize!</h3>
-  <button class="button-container" id="clear">Clear</button>
-  <button class="button-container" id="search">Search</button>
-  <script src="popup.js"></script>
+
+    <!-- Logo og firma navn -->
+    <div class="logo-container">
+      <img src="images/logo32.png" alt="Company Logo" class="logo">
+      <h4 class="company-name">OptiSize</h4>
+    </div>
+    
+    <!-- User Profile -->
+    <div class="user-profile">
+      <h4 class="user-name">Daniel Kasper</h4>
+      <img src="images/profile-picture.png" alt="User Profile Picture" class="profile-picture">
+    </div>
+    
+    <img src="images/fits.png" alt="Fits" class="fits">
+    <!-- Clickable Button -->
+    <button id="search" class="clickable-button">Calculate My Size!</button>
+   
+    <!-- Popup Container -->
+    <div id="popup-container" class="popup-container"></div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
