@@ -20,7 +20,7 @@ document.getElementById("search").addEventListener("click", function() {
     document.body.appendChild(recommendText);
 
     let image = document.createElement("img");
-    image.src = "images/logo128.png";
+    image.src = "images/jeans.jpeg";
     image.alt = "Logo";
     image.classList.add("appended-element"); // Add the "appended-element" class
     document.body.appendChild(image);
