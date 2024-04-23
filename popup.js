@@ -1,33 +1,35 @@
-function clearAppendedElements() {
-  let elementsToRemove = document.querySelectorAll(".appended-element");
-  elementsToRemove.forEach(function(element) {
-    element.remove();
-  });
-}
-
 document.getElementById("search").addEventListener("click", function() {
+  let appendDiv = document.querySelector('.append');
+
   let calculatingText = document.createElement("p");
   calculatingText.textContent = "Calculating...";
-  calculatingText.classList.add("appended-element"); // Add the "appended-element" class
-  document.body.appendChild(calculatingText);
+  calculatingText.classList.add("appended-element");
+  appendDiv.appendChild(calculatingText);
 
   setTimeout(function() {
     calculatingText.remove();
 
-    let recommendText = document.createElement("p");
-    recommendText.textContent = "We recommend the following:";
-    recommendText.classList.add("appended-element"); // Add the "appended-element" class
-    document.body.appendChild(recommendText);
+    let popupContainer = document.createElement("div");
+    popupContainer.classList.add("popup-container");
+
+    let recommendationText = document.createElement("p");
+    recommendationText.textContent = "We recommend the following:";
+    recommendationText.classList.add("popup-text");
+    popupContainer.appendChild(recommendationText);
 
     let image = document.createElement("img");
     image.src = "images/jeans.jpeg";
-    image.alt = "Logo";
-    image.classList.add("appended-element"); // Add the "appended-element" class
-    document.body.appendChild(image);
+    image.alt = "Recommendation";
+    image.classList.add("popup-image");
+    popupContainer.appendChild(image);
 
+    document.body.appendChild(popupContainer);
+
+    popupContainer.addEventListener("click", function(event) {
+      if (event.target === popupContainer) {
+        popupContainer.remove();
+      }
+    });
+    // Add sleep-time
   }, 2000);
-});
-
-document.getElementById("clear").addEventListener("click", function() {
-  clearAppendedElements();
 });
