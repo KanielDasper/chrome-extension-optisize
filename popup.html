@@ -8,25 +8,46 @@
 </head>
 <body>
 
+    <div class="top">
+
     <!-- Logo og firma navn -->
     <div class="logo-container">
-      <img src="images/logo32.png" alt="Company Logo" class="logo">
+      <img src="images/logo32.png" alt="Company Logo" class="logo" height="32" width="32">
       <h4 class="company-name">OptiSize</h4>
     </div>
     
     <!-- User Profile -->
     <div class="user-profile">
       <h4 class="user-name">Daniel Kasper</h4>
-      <img src="images/profile-picture.png" alt="User Profile Picture" class="profile-picture">
+      <img src="images/profile-picture.png" alt="User Profile Picture" class="profile-picture" height="32" width="32">
     </div>
-    
-    <img src="images/fits.png" alt="Fits" class="fits">
-    <!-- Clickable Button -->
-    <button id="search" class="clickable-button">Calculate My Size!</button>
-   
-    <!-- Popup Container -->
-    <div id="popup-container" class="popup-container"></div>
 
-    <script src="popup.js"></script>
+    <!-- end of top-div -->
+    </div>
+
+    <div class="master">
+      
+    <h2 class="fits-text">Desired Fits</h2>
+    
+    <!-- Desired fits -->
+    <div class="desired-fits-pics">
+      <img src="images/shirt.png" alt="Shirt picture" class="ideal-picture" height="80" width="80">
+      <img src="images/pants.png" alt="Tight picture" class="ideal-picture" height="80" width="80">
+    </div>
+
+    <div class="desired-fits-buttons">
+      <button id="ideal" class="clickable-button">Ideal</button>
+      <button id="ideal" class="clickable-button">Thight</button>
+    </div>
+    <!-- div-master end -->
+    </div> 
+
+    <!-- Clickable Button -->
+    <div class="calc-button">
+      <button id="search" class="clickable-button2">Calculate My Size!</button>
+    </div>
+   
+<script src="popup.js"></script>
+
 </body>
 </html>
