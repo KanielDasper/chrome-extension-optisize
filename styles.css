@@ -1,78 +1,107 @@
 /* Styles for Logo and Company Name */
 
 body {
-    width: 400px; /* Adjust based on the total width of the content */
-    height: 400px; /* Adjust based on the total height of the content */
-    padding: 10px; /* Adjust based on the spacing around the content */
+    height: 385px;
+    width: 300px;
+    padding: 10px;
 }
 
-.logo-container {
-    top: 10px;
+
+.master {
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    height: 255px; /* Adjust height as needed */
+    background-color: #ffffff; /* Set background color */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-name{
+    color: #2562D8
+}
+
+.logo{
+    margin-right: 10px;
+}
+
+.user-profile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-picture{
+    margin-left: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.fits-text{
+    padding: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.logo {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    margin-right: 10px; /* Adjust spacing between logo and company name */
-}
-
-.fits {
-    width: 250px;
-    height: 230px;
-    display: block;
-    margin: 0 auto; /* Center the image */
-}
-
-.company-name {
-    margin: 0;
-    line-height: 30px; /* Vertically center company name with logo */
-}
-
-/* Styles for User Profile */
-.user-profile {
-    position: absolute;
-    top: 10px;
-    right: 15px; /* Adjust distance from the right edge */
+.desired-fits-pics{
+    padding: 15px; 
+    margin-right: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.profile-picture {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    border-radius: 50%; /* Ensure profile picture is round */
-    margin-left: 10px; /* Adjust spacing between profile picture and user name */
+.desired-fits-buttons{
+    padding: 20px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.user-name {
-    margin: 0;
-    line-height: 30px; /* Vertically center user name with profile picture */
+.ideal-picture{
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
 }
 
-/* Style for Clickable Button */
-.clickable-button {
-    padding: 8px 16px; /* Adjust button padding */
-    font-size: 14px; /* Adjust button text size */
-    cursor: pointer;
-    background-color: #007bff; /* Change button background color */
-    color: #fff; /* Change button text color */
-    border: none;
-    border-radius: 5px; /* Adjust button border radius */
+.clickable-button{
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #9AE1C6;
+    color: white;
+    border: 2px solid #9AE1C6;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;   margin-right: 5px;
+}
+
+.clickable-button2{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #2562D8;
+    color: white;
+    border: 2px solid #2562D8;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;   margin-right: 5px;
+}
+
+.calc-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.clickable-button:hover {
-    background-color: #0056b3; /* Change button background color on hover */
-}
-
-
-/* Styles for Appended Elements */
-.appended-element {
-    margin-top: 10px; /* Adjust spacing between appended elements */
+    top: calc(50% + 160px); /* Position the button below the background box */
+    left: 50%;
+    transform: translateX(-50%);
 }
