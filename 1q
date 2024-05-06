@@ -13,12 +13,12 @@ document.getElementById("search").addEventListener("click", function() {
     popupContainer.classList.add("popup-container");
 
     let recommendationText = document.createElement("p");
-    recommendationText.textContent = "We recommend the following size: ";
+    recommendationText.textContent = "We recommend the following size:\n W: 32 \t L: 32";
     recommendationText.classList.add("popup-text");
     popupContainer.appendChild(recommendationText);
 
     let image = document.createElement("img");
-    image.src = "images/jeans.jpg";
+    image.src = "images/jeans.jpeg";
     image.alt = "Recommendation";
     image.classList.add("popup-image");
     popupContainer.appendChild(image);
